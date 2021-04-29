@@ -2,30 +2,47 @@ http://tiziano.fmf.uni-lj.si/
 
 https://www.kaggle.com/timcvetko/notebook684a1675a4/edit -- cnn
 
-ideas: 
+IDEAS: 
+	- INFNET -> killer, https://arxiv.org/pdf/2004.14133.pdf
+	http://medicalsegmentation.com/covid19/, https://github.com/DengPingFan/Inf-Net
 	- efficient net https://arxiv.org/pdf/1905.11946.pdf%E5%A4%8D%E5%90%88%E6%A8%A1%E5%9E%8B%E7%BC%A9%E6%94%BE
-	- cnn
-	- r-cnn with region proposal
-	- twin architecture ( freeze the layer before dense --> encodings) https://arxiv.org/pdf/2102.07975.pdf
-	A deep neural network classifier is trained initially using a selected
-training algorithm. 2. By removing the final layer, this classifier is turned into an encoder and encodings of the data are
-generated. These encodings are freezed and is used to train the twin. Final inference is done via the combination of
-pre-trained encoder and trained twin architecture.
+	- CNN
+	- R-CNN WITH REGION PROPOSAL
+	- AUTOENCODER
+	- UNET
+	- DEEP + PCA (pca as feature extractor, svm for training)
+	- LINEAR SVM
+	- TRANSFER LEARNING 
+	- ADID-UNET
+	- CASCADED UNET
+	https://arxiv.org/pdf/1803.05431.pdf
+	- UNETS: https://github.com/kMrGiovanni/UNetPlusPlus
+	https://github.com/ozan-oktay/Attention-Gated-Networks
+	https://github.com/xmengli999/H-DenseUNet
 
-	- autoencoder
-	- unet
-	
-	https://arxiv.org/pdf/2102.00596.pdf
-	https://arxiv.org/pdf/2101.07866.pdf - fft, gldm
-	
-	- deep + pca
-	- handcrafted
-	- linear svm
-	- transfer learning
-	
-https://www.kaggle.com/akhileshdkapse/learn-image-embedding-via-unet-tpu-part-i
-https://www.kaggle.com/morenovanton/vinbigdata-2class-classification-with-model-keras
-https://www.kaggle.com/yohehe/2-1-model-train-with-efficientdet-pytorch
+	- TIRAMISU https://github.com/0bserver07/One-Hundred-Layers-Tiramisu
+	https://github.com/junjungoal/Tiramisu-keras
+	- FCN 	https://github.com/HasnainRaz/FC-DenseNet-TensorFlow
+
+	- SEG NETS: SegNet, DilatedNet, DeepLabv1, DeconvNet
+	- TRANS UNET
+	 = https://github.com/Beckschen/TransUNet
+	- polyp segmentation: 
+	https://github.com/DengPingFan/PraNet
+	https://github.com/james128333/HarDNet-MSEG
+	- VNET 
+	-> https://paperswithcode.com/paper/v-net-fully-convolutional-neural-networks-for
+
+
+to je nujna stran -> https://paperswithcode.com/task/medical-image-segmentation
+
+https://www.researchgate.net/publication/333472639_Deep_Learning_Techniques_for_Medical_Image_Segmentation_Achievements_and_Challenges
+
+
+pytorch medical segmentation -> https://github.com/black0017/MedicalZooPytorch
+
+
+https://towardsdatascience.com/review-3d-u-net-resnet-volumetric-convolutions-long-short-residual-connections-biomedical-3a7da3f98dae
 
 data augmentation : https://www.kaggle.com/yohehe/1-data-augmentation
 
@@ -33,19 +50,11 @@ https://www.kaggle.com/soumochatterjee/xray-object-detection
 https://www.kaggle.com/anaselmasry/vinbigdata-chest-x-ray-abnormalities-detection
 https://www.kaggle.com/akhileshdkapse/nih-x-ray-multilabel-classification-tpu-guide
 
-	- tiramisu https://github.com/0bserver07/One-Hundred-Layers-Tiramisu
-	https://github.com/junjungoal/Tiramisu-keras
-	https://github.com/HasnainRaz/FC-DenseNet-TensorFlow
-	
-	semantic segmentation
-	SegNet, DilatedNet, DeepLabv1, DeconvNet
 
-https://towardsdatascience.com/review-3d-u-net-resnet-volumetric-convolutions-long-short-residual-connections-biomedical-3a7da3f98dae
+https://www.kaggle.com/akhileshdkapse/learn-image-embedding-via-unet-tpu-part-i
+https://www.kaggle.com/morenovanton/vinbigdata-2class-classification-with-model-keras
+https://www.kaggle.com/yohehe/2-1-model-train-with-efficientdet-pytorch
 
-// check this out: https://keras.io/examples/vision/3D_image_classification/
-
-3d grad cam
-Parametric response mapping
 
 https://cse.sc.edu/~songwang/document/spie18.pdf
 https://eurradiolexp.springeropen.com/articles/10.1186/s41747-019-0085-6
@@ -54,3 +63,36 @@ https://arxiv.org/pdf/1806.09074.pdf
 https://arxiv.org/pdf/2004.00218.pdf
 https://www.sciencedirect.com/science/article/pii/S1361841518306133
 https://arxiv.org/pdf/1906.02849.pdf
+https://peerj.com/articles/cs-349/
+https://www.nature.com/articles/s41598-018-28100-x
+https://ieeexplore.ieee.org/document/9066949
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7605758/
+https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9098956
+https://aapm.onlinelibrary.wiley.com/doi/full/
+https://ieeexplore.ieee.org/document/7478072
+https://paperswithcode.com/task/medical-image-segmentation
+
+	
+https://arxiv.org/pdf/2102.00596.pdf
+https://arxiv.org/pdf/2101.07866.pdf - fft, gldm
+// check this out: https://keras.io/examples/vision/3D_image_classification/
+
+3d grad cam
+Parametric response mapping
+
+
+## vgg transfer learning: https://github.com/Hulkido/RCNN/blob/master/RCNN.ipynb
+r-cnn from scratch: https://github.com/kentaroy47/frcnn-from-scratch-with-keras/tree/master/keras_frcnn, implementation of the roi pooling layer
+
+https://www.kaggle.com/kishor1210/train-faster-rcnn-using-keras - tudi iou in non-maximum surpression
+https://towardsdatascience.com/step-by-step-r-cnn-implementation-from-scratch-in-python-e97101ccde55
+
+fine tuning efficient net -> https://www.kaggle.com/micajoumathematics/fine-tuning-efficientnetb0-on-cifar-100
+
+https://docs.opencv.org/master/d3/db4/tutorial_py_watershed.html - watershed algorithm
+
+## https://github.com/ZFTurbo/segmentation_models_3D/tree/master/segmentation_models_3D/models
+## https://towardsdatascience.com/review-3d-u-net-volumetric-segmentation-medical-image-segmentation-8b592560fac1
+## https://github.com/mrkolarik/3D-brain-segmentation/blob/master/3D-dense-unet.py
+
+https://colab.research.google.com/drive/1kUOkey3CjWoebA5tVu2oazydFKpJKhrU?usp=sharing#scrollTo=HwBKx5bSwFDl
