@@ -1,7 +1,7 @@
 logs/*
-.docx
-.pdf
-.txt
+*.docx
+*.pdf
+*.txt
 *.csv
 *.tsv
 *.jpg
