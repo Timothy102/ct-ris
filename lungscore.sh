@@ -1,0 +1,1 @@
+python3 -m model.py --f_path HACKATHON/images/train/0000.nii.gz
