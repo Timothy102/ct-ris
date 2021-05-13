@@ -6,4 +6,6 @@ logs/*
 *.tsv
 *.jpg
 *.png
+*.zip
+*.pth
 
